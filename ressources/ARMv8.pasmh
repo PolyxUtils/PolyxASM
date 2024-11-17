@@ -6,7 +6,7 @@ ABS regQ[dst], regQ[src]:
     .description "Absolute Value 64-bit"
     .translate 1101101011000000001000, =src, =dst
 
-ABS regW[dst], regW[src]:
+ABS regD[dst], regD[src]:
     .description "Absolute Value 32-bit"
     .translate 0101101011000000001000, =src, =dst
 
@@ -14,7 +14,7 @@ ADC regQ[dst], regQ[srcOne], regQ[srcTwo]:
     .description "Adds with carry 64-bit"
     .translate 10011010000, =srcTwo, 000000, =srcOne, =dst
 
-ADC reqW[dst], regW[srcOne], regW[srcTwo]:
+ADC regD[dst], regD[srcOne], regD[srcTwo]:
     .description "Adds with carry 32-bit"
     .translate 00011010000, =srcTwo, 000000, =srcOne, =dst
 
@@ -22,7 +22,7 @@ ADCS regQ[dst], regQ[srcOne], regQ[srcTwo]:
     .description "Adds with carry 64-bit"
     .translate 10111010000, =srcTwo, 000000, =srcOne, =dst
 
-ADCS reqW[dst], regW[srcOne], regW[srcTwo]:
+ADCS regD[dst], regD[srcOne], regD[srcTwo]:
     .description "Adds with carry 32-bit"
     .translate 00111010000, =srcTwo, 000000, =srcOne, =dst
 
